@@ -1,83 +1,93 @@
-html, body {
-  height: 100%;
-}
-
 html {
-  background: #eee;
-}
+    width: 100vw;
+    height: 100vh;
+    border-radius: 5px;
+    box-shadow: 0 2px 30px rgba(black, .2);
+    background: rgb(9, 53, 61);
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .wave {
+    opacity: .6;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    background: rgb(63,204,129);
+    width: 200vw;
+    height: 200vw;
+    margin-left: -100vw;
+    margin-top: -175vw;
+    transform-origin: 50% 48%;
+    border-radius: 40%;
+    animation: drift 17000ms infinite linear;
+  }
+  
+  .wave.-three {
+    animation: drift 12000ms infinite linear;
+  }
+  
+  .wave.-two {
+    animation: drift 20000ms infinite linear;
+    opacity: .3;
+    background: rgb(30, 255, 244);
+  }
+  
+  html:after {
+    content: 'd';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+    color: white;
+    text-transform: uppercase;
+  }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  @keyframes drift {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+  }
 
-.box {
-  width: 300px;
-  height: 300px;
-  border-radius: 5px;
-  box-shadow: 0 2px 30px rgba(black, .2);
-  background: lighten(#f0f4c3, 10%);
-  position: relative;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-}
-
-.wave {
-  opacity: .4;
-  position: absolute;
-  top: 3%;
-  left: 50%;
-  background: #0af;
-  width: 500px;
-  height: 500px;
-  margin-left: -250px;
-  margin-top: -250px;
-  transform-origin: 50% 48%;
-  border-radius: 43%;
-  animation: drift 3000ms infinite linear;
-}
-
-.wave.-three {
-  animation: drift 5000ms infinite linear;
-}
-
-.wave.-two {
-  animation: drift 7000ms infinite linear;
-  opacity: .1;
-  background: yellow;
-}
-
-.box:after {
-  content: '';
-  display: block;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
-  z-index: 11;
-  transform: translate3d(0, 0, 0);
-}
-
-.title {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  line-height: 300px;
-  text-align: center;
-  transform: translate3d(0, 0, 0);
-  color: white;
-  text-transform: uppercase;
-  font-family: 'Playfair Display', serif;
-  letter-spacing: .4em;
-  font-size: 24px;
-  text-shadow: 0 1px 0 rgba(black, .1);
-  text-indent: .3em;
-}
-@keyframes drift {
-  from { transform: rotate(0deg); }
-  from { transform: rotate(360deg); }
-}
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 99px;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
