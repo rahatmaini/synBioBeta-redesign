@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:800&display=swap');
 @import "themify-icons.css";
 
+
   html {
     width: 100vw;
     height: 100vh;
@@ -10,32 +11,133 @@
     background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
     position: relative;
     transform: translate3d(0, 0, 0);
+    overflow: hidden;
   }
   .wrapper {
-    width: 100vw;
+    /*width: 100vw;
     height: 40%;
     position: absolute;
     left: 50%;
     top: 20%;
     transform: translate(-50%, -50%);
-    overflow: hidden;
+    overflow: hidden;*/
     font-family: 'Ubuntu', sans-serif;
   }
+
   .wave {
     opacity: .6;
     position: absolute;
     top: 3%;
     left: 50%;
-    background: rgb(63,204,129);
+    background: rgb(39, 173, 102);
     width: 200vw;
     height: 200vw;
     margin-left: -100vw;
-    margin-top: -190vw;
+    margin-top: -145vw;
     transform-origin: 50% 48%;
     border-radius: 40%;
     animation: drift 20000ms infinite linear;
   }
-  
+  @media screen and (max-width: 2000px) {
+    .wave {
+      opacity: .6;
+      position: absolute;
+      top: 3%;
+      left: 50%;
+      background: rgb(39, 173, 102);
+      width: 200vw;
+      height: 200vw;
+      margin-left: -100vw;
+      margin-top: -155vw;
+      transform-origin: 50% 48%;
+      border-radius: 40%;
+      animation: drift 20000ms infinite linear;
+    }
+  }
+  @media screen and (max-width: 1800px) {
+    .wave {
+      opacity: .6;
+      position: absolute;
+      top: 3%;
+      left: 50%;
+      background: rgb(39, 173, 102);
+      width: 200vw;
+      height: 200vw;
+      margin-left: -100vw;
+      margin-top: -140vw;
+      transform-origin: 50% 48%;
+      border-radius: 40%;
+      animation: drift 20000ms infinite linear;
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    .wave {
+      opacity: .6;
+      position: absolute;
+      top: 3%;
+      left: 50%;
+      background: rgb(39, 173, 102);
+      width: 200vw;
+      height: 200vw;
+      margin-left: -100vw;
+      margin-top: -130vw;
+      transform-origin: 50% 48%;
+      border-radius: 40%;
+      animation: drift 20000ms infinite linear;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .wave {
+      opacity: .6;
+      position: absolute;
+      top: 3%;
+      left: 50%;
+      background: rgb(39, 173, 102);
+      width: 200vw;
+      height: 200vw;
+      margin-left: -100vw;
+      margin-top: -115vw;
+      transform-origin: 50% 48%;
+      border-radius: 40%;
+      animation: drift 20000ms infinite linear;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .wave {
+      opacity: .6;
+      position: absolute;
+      top: 3%;
+      left: 50%;
+      background: rgb(39, 173, 102);
+      width: 200vw;
+      height: 200vw;
+      margin-left: -100vw;
+      margin-top: -105vw;
+      transform-origin: 50% 48%;
+      border-radius: 40%;
+      animation: drift 20000ms infinite linear;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .wave {
+      opacity: .6;
+      position: absolute;
+      top: 3%;
+      left: 50%;
+      background: rgb(39, 173, 102);
+      width: 200vw;
+      height: 200vw;
+      margin-left: -100vw;
+      margin-top: -75vw;
+      transform-origin: 50% 48%;
+      border-radius: 40%;
+      animation: drift 20000ms infinite linear;
+    }
+  }
+
   .wave.-three {
     animation: drift 15000ms infinite linear;
   }
@@ -55,7 +157,6 @@
     text-align: center;
     transform: translate3d(0, 0, 0);
     color: white;
-    text-transform: uppercase;
   }
 
   @keyframes drift {
@@ -114,8 +215,8 @@
 
   #searchButton {
     border-radius: 99px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(21, 32, 27);
+    color: rgb(255, 255, 255);
     transition: all .5s;
   }
 
@@ -128,14 +229,18 @@
   .hero {
     padding-top: 15vh;
     text-align: center;
+    transform: translate3d(0, 0, 0);
   }
 
   .heroText {
-    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
     line-height: 5vh;
-    color: rgb(15, 15, 15);
+    color: rgb(240, 240, 240);
     letter-spacing: .013em;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 1.7;
     font-family: 'Raleway', sans-serif;
+    transform: translate3d(0, 0, 0);
   }
