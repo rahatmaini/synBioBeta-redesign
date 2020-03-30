@@ -8,7 +8,7 @@
     height: 100vh;
     border-radius: 5px;
     box-shadow: 0 2px 30px rgba(black, .2);
-    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    background-color: rgb(187, 217, 223);
     position: relative;
     transform: translate3d(0, 0, 0);
     overflow: hidden;
@@ -29,7 +29,7 @@
     position: absolute;
     top: 3%;
     left: 50%;
-    background: rgb(39, 173, 102);
+    background: rgb(29, 134, 78);
     width: 200vw;
     height: 200vw;
     margin-left: -100vw;
@@ -44,7 +44,7 @@
       position: absolute;
       top: 3%;
       left: 50%;
-      background: rgb(39, 173, 102);
+      background: rgb(29, 134, 78);
       width: 200vw;
       height: 200vw;
       margin-left: -100vw;
@@ -60,7 +60,7 @@
       position: absolute;
       top: 3%;
       left: 50%;
-      background: rgb(39, 173, 102);
+      background: rgb(29, 134, 78);
       width: 200vw;
       height: 200vw;
       margin-left: -100vw;
@@ -76,7 +76,7 @@
       position: absolute;
       top: 3%;
       left: 50%;
-      background: rgb(39, 173, 102);
+      background: rgb(29, 134, 78);
       width: 200vw;
       height: 200vw;
       margin-left: -100vw;
@@ -93,7 +93,7 @@
       position: absolute;
       top: 3%;
       left: 50%;
-      background: rgb(39, 173, 102);
+      background: rgb(29, 134, 78);
       width: 200vw;
       height: 200vw;
       margin-left: -100vw;
@@ -110,7 +110,7 @@
       position: absolute;
       top: 3%;
       left: 50%;
-      background: rgb(39, 173, 102);
+      background: rgb(29, 134, 78);
       width: 200vw;
       height: 200vw;
       margin-left: -100vw;
@@ -127,7 +127,7 @@
       position: absolute;
       top: 3%;
       left: 50%;
-      background: rgb(39, 173, 102);
+      background: rgb(29, 134, 78);
       width: 200vw;
       height: 200vw;
       margin-left: -100vw;
@@ -227,7 +227,7 @@
   }
 
   .hero {
-    padding-top: 15vh;
+    padding-top: 10vh;
     text-align: center;
     transform: translate3d(0, 0, 0);
   }
@@ -235,12 +235,55 @@
   .heroText {
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 5%;
-    line-height: 5vh;
-    color: rgb(240, 240, 240);
+    padding-top: 7%;
+    line-height: 6vh;
+    color: rgb(236, 236, 236);
     letter-spacing: .013em;
     font-size: 36px;
     line-height: 1.7;
     font-family: 'Raleway', sans-serif;
     transform: translate3d(0, 0, 0);
+  }
+  
+  .scroll-down {
+    font-size: 16px;
+    width: 5vw;
+    margin-left: 48%;
+    display: block;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.15);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    border-radius: 99px;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    transform: scale(1);
+    text-decoration: none;
+  }
+  
+  
+  @keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+    60% {
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
   }
